@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-calci</title>
+    <link rel="stylesheet" href="./calci.css">
+    <script src="./calsi.js" defer></script>
+</head>
+<body>
+    <form  id="container" name="cForm">
+        <input type="text" id="display" name="Answer">
+        <div class="buttoncontainer">
+           <input type="button" class="buttons" value="1" onclick="cForm.Answer.value +='1',touch()">
+           <input type="button" class="buttons" value="2" onclick="cForm.Answer.value +='2',touch()">
+           <input type="button" class="buttons" value="3" onclick="cForm.Answer.value +='3',touch()">
+           <input type="button" class="buttons" value="+" onclick="cForm.Answer.value +='+',touch()">
+        </div>
+        <div class="buttoncontainer">
+            <input type="button" class="buttons" value="4" onclick="cForm.Answer.value +='4',touch()">
+            <input type="button" class="buttons" value="5" onclick="cForm.Answer.value +='5',touch()">
+            <input type="button" class="buttons" value="6" onclick="cForm.Answer.value +='6',touch()">
+            <input type="button" class="buttons" value="-" onclick="cForm.Answer.value +='-',touch()">
+        </div>
+        <div class="buttoncontainer">
+            <input type="button" class="buttons" value="7" onclick="cForm.Answer.value +='7',touch()">
+            <input type="button" class="buttons" value="8" onclick="cForm.Answer.value +='8',touch()">
+            <input type="button" class="buttons" value="9" onclick="cForm.Answer.value +='9',touch()">
+            <input type="button" class="buttons" value="*" onclick="cForm.Answer.value +='*',touch()">
+        </div>
+        <div class="buttoncontainer">
+            <input type="button" class="buttons" value="." onclick="cForm.Answer.value +='.',touch()">
+            <input type="button" class="buttons" value="0" onclick="cForm.Answer.value +='0',touch()">
+            <input type="button" class="buttons" value="%" onclick="cForm.Answer.value +='%',touch()">
+            <input type="button" class="buttons" value="/" onclick="cForm.Answer.value +='/',touch()">
+        </div>
+        <div class="buttoncontainer">
+            <input type="button" class="splButtons" value="clear" onclick="cForm.Answer.value ='',tap()">
+            <input type="button" class="splButtons" value="=" onclick="cForm.Answer.value =eval(cForm.Answer.value),tap()">
+        </div>
+    </form>
+    <!-- <img src="/placement_activity/asset/adiuo/click-button.mp3" > -->
+    <!-- <video src="/placement_activity/asset/adiuo/pick-92276.mp3" controls></video> -->
+</body>
+</html>
